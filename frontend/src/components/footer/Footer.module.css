@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    background-color: #0c2461;    
+    color: white;
+    min-height: 150px;  
+    align-items: center;
+
+}
+
+.div_footer {
+    margin: 0 auto;   
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.div_footer a svg{
+    margin-left: .1em;
+    color: white;
+    font-size: 2em;
+}
+
+

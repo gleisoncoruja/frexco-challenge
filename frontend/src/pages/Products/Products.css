@@ -1,0 +1,9 @@
+.tdImage{
+    align-items: center;
+    text-align: center;
+}
+.tdImage img{    
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+}

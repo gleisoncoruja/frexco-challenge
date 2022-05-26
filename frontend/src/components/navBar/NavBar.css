@@ -1,0 +1,9 @@
+.nav_bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu-appbar a {
+    text-decoration: none;
+    color: black;
+  }

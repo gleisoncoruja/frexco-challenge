@@ -1,0 +1,28 @@
+#tableCategories{    
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border: 1px solid #1875d2;
+    border-radius: 20px 20px;
+    padding: .5em;
+}
+
+#tableCategories th  {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #1875d2;
+}
+
+#tableCategories td  {
+    padding-left: 5px;
+}
+
+#tableCategories tbody tr:nth-child(odd) td {
+    /* border-bottom: 1px solid #88bb22; */
+    background-color: rgba(136, 187, 34, 0.15);
+}
+#tableCategories tbody tr:nth-child(even) td {
+    /* border-bottom: 1px solid #1875d2; */
+    background-color: rgba(24, 117, 210, 0.15);
+}
+
