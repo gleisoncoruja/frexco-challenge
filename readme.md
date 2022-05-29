@@ -5,8 +5,9 @@
 <h2>Apresentação</h2>
         <p>
           Olá, é com muito orgulho que apresento o projeto que desenvolvi para o desafio promovido pela empresa Frexco, esse projeto apesar de ser simples envolve várias funcionalidades 
-          por trás de sua simplicidade, tais como validação de autenticação por JWT, validações das requisições tanto no back-end quanto no front-end, restrições de acesso para usuários não autenticados.
-        </p>  
+          por trás de sua simplicidade, tais como validação de autenticação por JWT, validações das requisições tanto no back-end quanto no front-end, restrições de acesso para usuários não autenticados.          
+        </p>
+        <p>Confira o sistema online <a href='https://frexcochallenge.netlify.app/'> clicando aqui </a></p>  
         <h2>O que podemos encontrar nesse projeto?</h2>    
         <ul>
           <li>Cadastro e edição de usuário</li>
