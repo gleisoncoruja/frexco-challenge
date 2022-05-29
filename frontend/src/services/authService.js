@@ -8,7 +8,7 @@ const register = async (data) => {
     const res = await fetch(`${api}/users/register`, config)
       .then((res) => res.json())
       .catch((err) => ({
-        errors: ["Houve um erro, por favor tente mais tarde"],
+        errors: ["Houve um erro, por favor tente mais tarde."],
       }));
 
     if (res._id) {
@@ -34,7 +34,7 @@ const login = async (data) => {
     const res = await fetch(`${api}/users/login`, config)
       .then((res) => res.json())
       .catch((err) => ({
-        errors: ["Houve um erro, por favor tente mais tarde"],
+        errors: ["Houve um erro, por favor tente mais tarde."],
       }));
 
     if (res._id) {

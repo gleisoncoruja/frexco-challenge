@@ -7,7 +7,7 @@ const getProducts = async (token) => {
     const res = await fetch(`${api}/products/`, config)
       .then((res) => res.json())
       .catch((err) => ({
-        errors: ["Houve um erro, por favor tente mais tarde"],
+        errors: ["Houve um erro, por favor tente mais tarde."],
       }));
 
     return res;
@@ -23,7 +23,7 @@ const deleteProduct = async (id, token) => {
     const res = await fetch(`${api}/products/${id}`, config)
       .then((res) => res.json())
       .catch((err) => ({
-        errors: ["Houve um erro, por favor tente mais tarde"],
+        errors: ["Houve um erro, por favor tente mais tarde."],
       }));
 
     return res;
@@ -38,7 +38,7 @@ const addProduct = async (data, token) => {
     const res = await fetch(`${api}/products/create`, config)
       .then((res) => res.json())
       .catch((err) => ({
-        errors: ["Houve um erro, por favor tente mais tarde"],
+        errors: ["Houve um erro, por favor tente mais tarde."],
       }));
 
     return res;
@@ -53,7 +53,7 @@ const getProductById = async (id, token) => {
     const res = await fetch(`${api}/products/${id}`, config)
       .then((res) => res.json())
       .catch((err) => ({
-        errors: ["Houve um erro, por favor tente mais tarde"],
+        errors: ["Houve um erro, por favor tente mais tarde."],
       }));
 
     return res;
@@ -68,7 +68,7 @@ const updateProduct = async (id, data, token) => {
     const res = await fetch(`${api}/products/${id}`, config)
       .then((res) => res.json())
       .catch((err) => ({
-        errors: ["Houve um erro, por favor tente mais tarde"],
+        errors: ["Houve um erro, por favor tente mais tarde."],
       }));
 
     return res;
@@ -83,7 +83,7 @@ const buyProduct = async (data, token) => {
     const res = await fetch(`${api}/products/buy`, config)
       .then((res) => res.json())
       .catch((err) => ({
-        errors: ["Houve um erro, por favor tente mais tarde"],
+        errors: ["Houve um erro, por favor tente mais tarde."],
       }));
 
     return res;
