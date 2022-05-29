@@ -7,7 +7,9 @@ const profile = async (data, token) => {
   try {
     const res = await fetch(`${api}/users/profile`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -22,7 +24,9 @@ const updateProfile = async (data, token) => {
   try {
     const res = await fetch(`${api}/users/`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {

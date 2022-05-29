@@ -6,7 +6,9 @@ const getProducts = async (token) => {
   try {
     const res = await fetch(`${api}/products/`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -20,7 +22,9 @@ const deleteProduct = async (id, token) => {
   try {
     const res = await fetch(`${api}/products/${id}`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -33,7 +37,9 @@ const addProduct = async (data, token) => {
   try {
     const res = await fetch(`${api}/products/create`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -46,7 +52,9 @@ const getProductById = async (id, token) => {
   try {
     const res = await fetch(`${api}/products/${id}`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -59,7 +67,9 @@ const updateProduct = async (id, data, token) => {
   try {
     const res = await fetch(`${api}/products/${id}`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -72,7 +82,9 @@ const buyProduct = async (data, token) => {
   try {
     const res = await fetch(`${api}/products/buy`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {

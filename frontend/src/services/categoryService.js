@@ -7,7 +7,9 @@ const getCategories = async (token) => {
   try {
     const res = await fetch(`${api}/categories/`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -21,7 +23,9 @@ const deleteCategory = async (id, token) => {
   try {
     const res = await fetch(`${api}/categories/${id}`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -34,7 +38,9 @@ const getCategoryById = async (id, token) => {
   try {
     const res = await fetch(`${api}/categories/${id}`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -47,7 +53,9 @@ const updateCategory = async (id, data, token) => {
   try {
     const res = await fetch(`${api}/categories/${id}`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
@@ -60,7 +68,9 @@ const addCategory = async (data, token) => {
   try {
     const res = await fetch(`${api}/categories/create`, config)
       .then((res) => res.json())
-      .catch((err) => err);
+      .catch((err) => ({
+        errors: ["Houve um erro, por favor tente mais tarde"],
+      }));
 
     return res;
   } catch (error) {
